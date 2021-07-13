@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://determined-swirles-11060f.netlify.app",
     title: "mdx-explore-gatsby",
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-emotion"
+  ],
 };
