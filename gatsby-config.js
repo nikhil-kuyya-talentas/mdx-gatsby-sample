@@ -4,6 +4,7 @@ module.exports = {
     title: "mdx-explore-gatsby",
   },
   plugins: [
-    "gatsby-plugin-emotion"
+    "gatsby-plugin-emotion",
+    "gatsby-plugin-netlify-cms"
   ],
 };
