@@ -2,12 +2,12 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "images"
+media_folder: "static/admin/images"
 
 collections:
   - name: "carousel"
     label: "Carousel"
-    folder: "content/carousel"
+    folder: "static/admin/content/carousel"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
