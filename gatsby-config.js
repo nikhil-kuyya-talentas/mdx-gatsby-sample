@@ -15,6 +15,14 @@ module.exports = {
           default: require.resolve('./src/components/layout.js')
         }
       }
-    }
+    },
+    {
+      resolve : "gatsby-source-filesystem",
+      options: {
+        name : "carousel-images",
+        path : "content/carousel"
+      }
+    },
+    "gatsby-transformer-remark"
   ],
 };
