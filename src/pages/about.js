@@ -35,7 +35,7 @@ const Aboutpage = () => {
         <h1>About Page</h1>
         <form name="contact" method="post" action="/about/"
             onSubmit={handleSubmit}
-            data-netlify="true" data-netlify-recaptcha="true" data-netlify-honeypot="bot-field">
+            data-netlify="true" data-netlify-honeypot="bot-field">
 
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>
