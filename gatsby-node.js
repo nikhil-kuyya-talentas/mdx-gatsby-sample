@@ -7,7 +7,6 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 };
 
 exports.onCreateNode = args => {
-  console.log(args)
   const { actions, node } = args
   if (node.internal.type === "MarkdownRemark") {
     const { createNodeField } = actions
