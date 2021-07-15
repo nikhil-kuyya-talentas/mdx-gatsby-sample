@@ -8,11 +8,10 @@ import useCarouseldata from "../hooks/use-carouseldata"
 // markup
 const IndexPage = () => {
   const data = useCarouseldata();
-  console.log(data);
   return (
     <Layout>
       <h1>Welcome to sample project</h1>
-      {data.map(carousel => {
+      { data.map(carousel => {
         const { image, title } = carousel.frontmatter;
         return <>
         <p>{title}</p>
