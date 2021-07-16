@@ -17,9 +17,9 @@ collections:
   - label: "Home"
     name: "home"
     files:
-      - label: "Carousel"
+      - label: "Home-Carousel"
         name: "carousel"
-        file: "content/carousel.json"
+        file: "content/home/carousel.json"
         fields:
           - label: Image
             name: team
@@ -28,3 +28,25 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: Description, name: description, widget: string}
               - {label: Photo, name: photo, widget: image}
+      - label: "Features"
+        name: "features"
+        file: "content/home/features.json"
+        fields:
+          - label: Features
+            name: feature
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: string}
+              - {label: Icon,name: icon, widget: image}
+      - label: "Projects"
+        name: "projects"
+        file: "content/home/projects.json"
+        fields:
+          - label: Features
+            name: feature
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: markdown}
+              - {label: ProjectImage,name: image, widget: image}
