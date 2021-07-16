@@ -28,7 +28,7 @@ const Header = () => (
       border-bottom: 1px solid #ddd;
       display: flex;
       justify-content: space-between;
-      padding: 0.5rem calc((100vw - 550px - 0.5rem) / 2);
+      padding: 0.5rem calc((100vw - 950px - 0.5rem) / 2);
     `}
   >
     <NavLink to="/" fontWeight="bold">
@@ -42,11 +42,20 @@ const Header = () => (
       <NavLink to="/" activeClassName="current-page">
         Home
       </NavLink>
-      <NavLink to="/about/" activeClassName="current-page">
-        About
+      <NavLink to="/products-and-services/" activeClassName="current-page">
+        Products & Services
       </NavLink>
-      <NavLink to="/contact/" activeClassName="current-page">
-        Contact
+      <NavLink to="/faq/" activeClassName="current-page">
+        FAQ
+      </NavLink>
+      <NavLink to="/get-a-quote/" activeClassName="current-page">
+        Get a Quote / Contact
+      </NavLink>
+      <NavLink to="/careers/" activeClassName="current-page">
+        Careers
+      </NavLink>
+      <NavLink to="/paybillonline/" activeClassName="current-page">
+        Pay Bill Online
       </NavLink>
     </nav>
   </header>

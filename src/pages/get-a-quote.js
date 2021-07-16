@@ -8,7 +8,7 @@ function encode(data) {
         .join('&')
 }
 
-const Aboutpage = () => {
+const GetAQuotePage = () => {
     const [state, setState] = React.useState({})
 
     const handleChange = (e) => {
@@ -29,11 +29,10 @@ const Aboutpage = () => {
             alert(error))
     }
 
-
-
-    return <Layout>
-        <h1>About Page</h1>
-        <form name="contact" method="post" action="/about/"
+    return (
+        <Layout>
+         <h1>Get A Quote</h1>
+         <form name="contact" method="post" action="/about/"
             onSubmit={handleSubmit}
             data-netlify="true" data-netlify-honeypot="bot-field">
 
@@ -66,6 +65,8 @@ const Aboutpage = () => {
                 <button type="submit">Send</button>
             </p>
         </form>
-    </Layout>
+        </Layout>
+    )
 }
-export default Aboutpage;
+
+export default GetAQuotePage;

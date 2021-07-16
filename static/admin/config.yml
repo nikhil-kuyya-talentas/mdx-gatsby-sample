@@ -21,19 +21,19 @@ collections:
         name: "carousel"
         file: "content/home/carousel.json"
         fields:
-          - label: Image
-            name: team
+          - label: Carousel
+            name: carousel
             widget: list
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Description, name: description, widget: string}
-              - {label: Photo, name: photo, widget: image}
+              - {label: Title, name: title, widget: string }
+              - {label: Description, name: description, widget: string }
+              - {label: Image, name: image, widget: image }
       - label: "Features"
         name: "features"
         file: "content/home/features.json"
         fields:
           - label: Features
-            name: feature
+            name: features
             widget: list
             fields:
               - {label: Title, name: title, widget: string}
@@ -43,10 +43,31 @@ collections:
         name: "projects"
         file: "content/home/projects.json"
         fields:
-          - label: Features
-            name: feature
+          - label: Projects
+            name: projects
             widget: list
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: Description, name: description, widget: markdown}
-              - {label: ProjectImage,name: image, widget: image}
+              - {label: Short Description, name: brief, widget: string}
+              - {label: ProjectImage,name: projectImage, widget: image}
+      - label: "Recommendations"
+        name: "recommendations"
+        file: "content/home/recommendations.json"
+        fields:
+          - label: Recommendations
+            name: recommendations
+            widget: list
+            fields:
+              - {label: RecommendedBy, name: recommendedby, widget: string}
+              - {label: Profession, name: profession, widget: string}
+              - {label: Recommendation,name: recommendation, widget: markdown}
+              - {label: RecommendationProfileIcon,name: recommendationProfileIcon, widget: image}
+      - label: "Steps of Installation"
+        name: "steps"
+        file: "content/home/steps-of-installation.json"
+        fields:
+          - label: 'Steps of Installation'
+            name: stepsOfInstallation
+            widget: list
+            fields:
+              - {label: Step Name, name: step, widget: string}
