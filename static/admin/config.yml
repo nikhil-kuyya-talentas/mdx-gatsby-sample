@@ -14,3 +14,17 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
+  - label: "Home"
+    name: "home"
+    files:
+      - label: "Carousel"
+        name: "carousel"
+        file: "content/carousel.json"
+        fields:
+          - label: Image
+            name: team
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: string}
+              - {label: Photo, name: photo, widget: image}
