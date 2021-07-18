@@ -70,4 +70,38 @@ collections:
             name: stepsOfInstallation
             widget: list
             fields:
+              - {label: Step Number,name: stepNumber, widget: number}
               - {label: Step Name, name: step, widget: string}
+      - label: "Address"
+        name : "address"
+        file: content/home/address.json
+        fields:
+          - label: "Address"
+            name: address
+            widget: object
+            fields: 
+              - { label: "Name",name: name,widget: string }
+              - { label: "House Number",name: houseno,widget: string}
+              - { label: "Street Name",name: streetName,widget: string}
+              - { label: "Apartment/Suite/Room number",name: roomNumber,widget: string,optional: true}
+              - { label: "Town",name: town,widget: string}
+              - { label: "State Abbrevation",name: state,widget: string}
+              - { label: "Zip Code",name: zipcode,widget: string}
+  - label: "Products and Services"
+    name: products-and-services
+    folder: content/products-and-services
+    create: true
+    fields: 
+      - {label: "Layout",name: "products-and-services", widget: hidden, default: "products-and-services"}
+      - {label: "Name", name: name, widget: string }
+      - {label: "type", name: type, widget: select,options: ["Product","Service"]}
+      - {label: "Body",name: body,widget: markdown}
+  - label: "FAQ"
+    name: faq
+    folder: content/faq
+    create: true
+    fields: 
+      - {label: "Layout",name: layout, widget: hidden,default: faq}
+      - {label: "Question",name: question, widget: string}
+      - {label: "Type",name: type,widget: select,options: ["Option 1","Options 2"]}
+      - {label: "Answer",name: answer, widget: markdown }
