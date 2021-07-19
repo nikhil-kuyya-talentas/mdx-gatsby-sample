@@ -104,4 +104,4 @@ collections:
       - {label: "Layout",name: layout, widget: hidden,default: faq}
       - {label: "Question",name: question, widget: string}
       - {label: "Type",name: type,widget: select,options: ["Option 1","Options 2"]}
-      - {label: "Answer",name: answer, widget: markdown }
+      - {label: "Answer",name: body, widget: markdown }
