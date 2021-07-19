@@ -5,14 +5,19 @@ const useFAQs = () => {
 {
     allMarkdownRemark(filter: {frontmatter: {layout: {eq: "faq"}}}) {
         nodes {
-            excerpt
+          id
+          excerpt
+          frontmatter {
+            question
+            type
+          }
         }
-    }
+      }
 }
 `);
 
-    return data.allMarkdownRemark.nodes.map((productandService) => {
-        const { frontmatter, excerpt } = productandService;
+    return data.allMarkdownRemark.nodes.map((faq) => {
+        const { frontmatter, excerpt } = faq;
         return {
             question: frontmatter.question,
             type: frontmatter.type,

@@ -11,13 +11,14 @@ const IndexPage = () => {
   return (
     <Layout>
       <h1>Welcome to sample project</h1>
-      { data.map(carousel => {
-        const { image, title } = carousel.frontmatter;
-        return <>
-        <p>{title}</p>
-        <img src={image.replace("/static",'')} alt={title} height="500" width="500"/>
-        </>
-      })
+      { 
+        data.map(carousel => {
+          const { image, title } = carousel.frontmatter;
+          return <>
+            <p>{title}</p>
+            <img src={image.replace("/static",'')} alt={title} height="500" width="500"/>
+          </>
+        })
       }
       <pre>{JSON.stringify(data,null,2)}</pre>
     </Layout>
