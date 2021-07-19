@@ -3,11 +3,19 @@ import { useStaticQuery, graphql } from 'gatsby';
 const useProductsAndServices = () => {
     const data = useStaticQuery(graphql`
 {
-    allMarkdownRemark(filter: {frontmatter: {layout: {eq: "products-and-services"}}}) {
+    allMarkdownRemark(
+        filter: {frontmatter: {layout: {eq: "products-and-services"}}}
+      ) {
         nodes {
-        excerpt
+          id
+          excerpt
+          frontmatter {
+            type
+            layout
+            name
+          }
         }
-    }
+      }
 }
 `);
 
