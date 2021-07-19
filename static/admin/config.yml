@@ -93,15 +93,15 @@ collections:
     create: true
     fields: 
       - {label: "Layout",name: "layout", widget: hidden, default: "products-and-services"}
-      - {label: "Name", name: name, widget: string }
-      - {label: "type", name: type, widget: select,options: ["Product","Service"]}
-      - {label: "Body",name: body,widget: markdown}
+      - {label: "Name", name: "name", widget: string }
+      - {label: "type", name: "type", widget: select,options: ["Product","Service"]}
+      - {label: "Body",name: "body",widget: markdown}
   - label: "FAQ"
     name: faq
     folder: content/faq
     create: true
     fields: 
-      - {label: "Layout",name: layout, widget: hidden,default: faq}
-      - {label: "Question",name: question, widget: string}
-      - {label: "Type",name: type,widget: select,options: ["Option 1","Options 2"]}
-      - {label: "Answer",name: body, widget: markdown }
+      - {label: "Layout",name: "layout", widget: hidden,default: faq}
+      - {label: "Question",name: "question", widget: string}
+      - {label: "Type",name: "type",widget: select,options: ["Option 1","Options 2"]}
+      - {label: "Answer",name: "body", widget: markdown }
