@@ -92,7 +92,7 @@ collections:
     folder: content/products-and-services
     create: true
     fields: 
-      - {label: "Layout",name: "products-and-services", widget: hidden, default: "products-and-services"}
+      - {label: "Layout",name: "layout", widget: hidden, default: "products-and-services"}
       - {label: "Name", name: name, widget: string }
       - {label: "type", name: type, widget: select,options: ["Product","Service"]}
       - {label: "Body",name: body,widget: markdown}
