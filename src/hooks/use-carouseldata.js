@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 const useCarouseldata = () => {
 const data = useStaticQuery(graphql`
 {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: {frontmatter: {layout: {eq: "blog"}}}) {
         nodes {
         frontmatter {
             image
