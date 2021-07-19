@@ -5,7 +5,7 @@ import Header from './header';
 import useSiteMetadata from '../hooks/use-sitemetadata'
 
 const Layout = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+  const { title, description,siteUrl } = useSiteMetadata();
   return (
   <>
     <Global
@@ -63,6 +63,7 @@ const Layout = ({ children }) => {
       <html lang="en"/>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <link rel="canonical" href={siteUrl} />
     </Helmet>
     <Header />
     <main

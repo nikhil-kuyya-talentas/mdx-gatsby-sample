@@ -23,6 +23,20 @@ module.exports = {
         path : "content/carousel"
       }
     },
+    {
+      resolve : "gatsby-source-filesystem",
+      options: {
+        name : "products-and-services",
+        path : "content/products-and-services"
+      }
+    },
+    {
+      resolve : "gatsby-source-filesystem",
+      options : {
+        name : "faq",
+        path : "content/faq"
+      } 
+    },
     "gatsby-transformer-remark"
   ],
 };
